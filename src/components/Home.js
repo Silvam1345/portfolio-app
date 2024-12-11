@@ -1,6 +1,11 @@
 import { Link } from 'react-router-dom';
 export default function Home(props) {
     return (
-        <h1>This is the home page!</h1>
+        <div>
+            <h1>Welcome to my Portfolio!</h1>
+            <div className='intro-content'>
+                <p>This is a web application that highlights my past projects and marks my goal of working in software development.</p>
+            </div>
+        </div>
     )
 }

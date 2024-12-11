@@ -1,0 +1,96 @@
+
+
+/* Header CSS */
+.header-container {
+    background-color: #000149;
+    color: white;
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.header-container a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 1em;
+    padding-left: 30px;
+    
+    
+}
+
+.header-links {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+.header-links a:hover, .home-link:hover {
+    color: rgb(180, 182, 255);
+}
+
+
+
+
+
+
+/* Body CSS */
+.body-content {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+/* Sidebar CSS */
+.contact-info {
+    background: #8e96ff;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+
+.contact-info-links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}
+
+.contact-info-links > a {
+    margin: 10px;
+}
+
+.personal-contacts {
+    text-align: center;
+}
+/* Footer CSS */
+
+
+
+.footer-links, .footer-copyright {
+    background: rgba(33, 33, 36, 0.986);
+    text-align: center;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+.footer-copyright {
+    padding-bottom: 0;
+}
+
+.footer-links {
+    padding-top: 10px;
+}
+.footer-links > a {
+    color: whitesmoke;
+    margin: 0.5em;
+    text-decoration: none;
+}
+
+.footer-links > a:hover {
+    color: goldenrod;
+}

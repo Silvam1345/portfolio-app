@@ -1,0 +1,29 @@
+[
+    {
+        "name": "nba-player-app",
+        "display_name": "NBA Player App",
+        "date_start": "YYYY-MM-DD",
+        "date_end": "YYYY-MM-DD",
+        "description": "Brief description of the project, including its purpose and goals.",
+        "link": "https://example.com/project-link",
+        "image": "https://example.com/project-image.jpg"
+    },
+    {
+        "name": "rmv-registry-db",
+        "display_name": "RMV Registry Database",
+        "date_start": "YYYY-MM-DD",
+        "date_end": "YYYY-MM-DD",
+        "description": "Brief description of the project, including its purpose and goals.",
+        "link": "https://example.com/project-link",
+        "image": "https://example.com/project-image.jpg"
+    },
+    {
+        "name": "escape-room",
+        "display_name": "Escape Room Game",
+        "date_start": "YYYY-MM-DD",
+        "date_end": "YYYY-MM-DD",
+        "description": "Brief description of the project, including its purpose and goals.",
+        "link": "https://example.com/project-link",
+        "image": "https://example.com/project-image.jpg"
+    }
+]
