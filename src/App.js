@@ -2,25 +2,29 @@
 import './App.css';
 import React from 'react';
 import './portfolio.css';
+import { projects } from './models/projects';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header, Footer, About, Contact, ProjectDetail, ProjectList, Home, Sidebar } from './components';
 
-const project_api = "./models/projects.json";
+//const project_api = "./models/projects.json";
 
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { projectList: [] }
+    this.state = { projectList: projects }
   }
 
+  /*
   componentDidMount() {
     fetch(project_api)
       .then(res => res.json())
       .then(data => this.setState({ projectList : data }))
       .catch(err => console.log(err))
   }
+      */
+     
   render() {
     return (
       <div className="App">
