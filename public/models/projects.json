@@ -5,8 +5,8 @@
         "date_start": "YYYY-MM-DD",
         "date_end": "YYYY-MM-DD",
         "description": "Brief description of the project, including its purpose and goals.",
-        "link": "https://example.com/project-link",
-        "image": "https://example.com/project-image.jpg"
+        "link": "https://github.com/Silvam1345/cpa02",
+        "image": "basketball-orange.png"
     },
     {
         "name": "rmv-registry-db",
@@ -14,8 +14,8 @@
         "date_start": "YYYY-MM-DD",
         "date_end": "YYYY-MM-DD",
         "description": "Brief description of the project, including its purpose and goals.",
-        "link": "https://example.com/project-link",
-        "image": "https://example.com/project-image.jpg"
+        "link": "https://github.com/Silvam1345/rmvDatabase",
+        "image": "RMV-sign.webp"
     },
     {
         "name": "escape-room",
@@ -23,7 +23,7 @@
         "date_start": "YYYY-MM-DD",
         "date_end": "YYYY-MM-DD",
         "description": "Brief description of the project, including its purpose and goals.",
-        "link": "https://example.com/project-link",
-        "image": "https://example.com/project-image.jpg"
+        "link": "https://github.com/Silvam1345/escape-room",
+        "image": "maze-icon-img.png"
     }
 ]

@@ -39,12 +39,59 @@
     display: grid;
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto 1fr auto;
+    padding: 30px;
+}
+
+.project-element img {
+    height: 10em;
+    padding: 10px;
+}
+
+.project-element {
+    border: 1px solid rgb(12, 11, 17);
+    max-width: 400px;
+    width: 100%;
+    background: rgb(14, 10, 59);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 2em;
+    box-shadow: 2px 2px 2px 1px rgba(47, 47, 48, 0.2);
+    height: fit-content;
+    transition: margin 0.2s ease-in-out;
+}
+
+.project-element:hover {
+    background-color: #3543ff;
+    margin-top: -10px;
+}
+
+
+
+.project-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 20px;
+    justify-items: center;
+}
+
+.detail-link {
+    
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+    
+    
+}
+
+.detail-body {
+    padding: 10px;
 }
 
 
 /* Sidebar CSS */
 .contact-info {
-    background: #8e96ff;
+    background: #3e49ee;
     margin: 15px;
     border-radius: 10px;
     padding: 20px;
@@ -71,7 +118,7 @@
 
 
 .footer-links, .footer-copyright {
-    background: rgba(33, 33, 36, 0.986);
+    background: #00001d;
     text-align: center;
     color: white;
     width: 100%;

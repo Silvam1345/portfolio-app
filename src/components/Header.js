@@ -5,7 +5,7 @@ export default function Header() {
             <Link className="home-link" to="/">My Portfolio</Link>
             <div className='header-links'>
                 <Link to='/about'>About Me</Link>
-                <Link to="https://example.com">Projects</Link>
+                <Link to="/projects">Projects</Link>
                 <Link to="https://example.com">Contact</Link>
             </div>
         </header>

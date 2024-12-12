@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-export default function Footer() {
+export default function About() {
     return (
         <div>
             <h1>About Me</h1>
@@ -10,7 +10,7 @@ export default function Footer() {
                 <h2>My Past Projects Summary</h2>
             </div>
             <div className='hobbies-content'>
-            <h2>My Hobbies</h2>
+                <h2>My Hobbies</h2>
             </div>
         </div>
     )
