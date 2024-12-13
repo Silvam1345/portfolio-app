@@ -6,10 +6,6 @@ import { projects } from './models/projects';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Header, Footer, About, Contact, ProjectDetail, ProjectList, Home, Sidebar } from './components';
 
-//const project_api = "./models/projects.json";
-
-//const contact_api = './models/contacts.json';
-
 const contact_api = "https://jsonhost.com/json/238de7a4f3ed37abd0251c9819f382b8"
 class App extends React.Component {
 
@@ -101,22 +97,5 @@ class App extends React.Component {
     );
   }
 }
-
-
-
-/**
- *      <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
- */
 
 export default App;
