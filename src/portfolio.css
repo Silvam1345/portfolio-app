@@ -34,7 +34,7 @@
 .body-content {
     display: grid;
     grid-template-columns: 4fr 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 1fr auto;
     padding: 30px;
 }
 
@@ -52,13 +52,12 @@
     border-radius: 10px;
     margin-bottom: 2em;
     box-shadow: 2px 2px 2px 1px rgba(47, 47, 48, 0.2);
-    height: fit-content;
-    transition: margin 0.2s ease-in-out;
+    
 }
 
 .project-element:hover {
     background-color: #3543ff;
-    margin-top: -10px;
+    
 }
 
 .project-element:active {
@@ -93,10 +92,24 @@
     padding: 10px;
 }
 
+.projects-container {
+    background-color: #040042;
+    border-radius: 10px;
+    padding: 40px;
+    margin: auto;
+    
+}
 
+.project-container {
+    background-color: #040042;
+    border-radius: 10px;
+    padding: 40px;
+    margin: auto;
+    max-width: 600px;
+}
 
 .project-button, .github-link {
-    background-color: rgba(5, 13, 34, 0.986);
+    background-color: rgba(14, 33, 82, 0.986);
     border: 1px solid rgb(12, 11, 17);
     border-radius: 10px;
     box-shadow: 2px 2px 2px 1px rgba(47, 47, 48, 0.2);
@@ -138,6 +151,7 @@
     margin: 15px;
     border-radius: 10px;
     padding: 20px;
+    max-height: fit-content;
 
 }
 
@@ -151,14 +165,101 @@
 
 .contact-info-links > a {
     margin: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.contact-info-links a:hover {
+    color: rgb(180, 182, 255);
 }
 
 .personal-contacts {
     text-align: center;
+    padding-bottom: 10px;
 }
 
 /* Contact Page CSS */
 
+.contact-container div {
+    margin-bottom: 20px;
+   
+}
+
+
+
+.contact-container {
+    background-color: #040042;
+    border-radius: 10px;
+    padding: 40px;
+    margin: auto;
+    max-width: 600px;
+}
+
+.contact-container input {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.send-contact-button {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 20px;
+    background-color: #28295a;
+    color: whitesmoke;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid rgb(12, 11, 17);
+    margin-top: 20px;
+    font-size: medium;
+
+}
+
+.send-contact-button:hover {
+    background-color: #474899;
+}
+
+.send-contact-button:active {
+    background-color: #14152c;
+    transform: scale(0.98);
+}
+
+/* About CSS */
+
+.about-container {
+    background-color: #040042;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.about-container div {
+    padding-bottom: 20px;
+}
+
+.about-image {
+    height: 20em;
+    padding: 10px;
+}
+
+.projects-link {
+    margin: 10px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.projects-link:hover {
+    color: rgb(180, 182, 255);
+}
+
+/* Home CSS */
+.home-container {
+    background-color: #040042;
+    border-radius: 10px;
+    padding: 40px;
+    max-width: 600px;
+    margin-inline: auto;
+}
 
 /* Footer CSS */
 
@@ -187,4 +288,22 @@
 
 .footer-links > a:hover {
     color: rgb(180, 182, 255);
+}
+
+@media (max-width: 1200px) {
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 800px) {
+    .body-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
 }

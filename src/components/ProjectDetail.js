@@ -32,6 +32,7 @@ export default function ProjectList({ projectList }) {
                 <h1 className='project-name'>{projectData.display_name} </h1>
                 <div className='project-details'>
                     <img src={'../images/'+projectData.image} alt="project-image" className='project-image'></img>
+                    <div>{projectData.date_start+" to "+projectData.date_end}</div>
                     <p>{projectData.description}</p>
                     <Link className="github-link" to={projectData.link}>Github Code</Link>
                     <div className='project-button'>

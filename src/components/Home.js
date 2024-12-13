@@ -1,10 +1,12 @@
 import { Link } from 'react-router-dom';
 export default function Home(props) {
     return (
-        <div>
+        <div className='home-container'>
             <h1>Welcome to my Portfolio!</h1>
             <div className='intro-content'>
-                <p>This is a web application that highlights my past projects and marks my goal of working in software development.</p>
+                <p>This is a web app that highlights my past 
+                    projects and helps you to learn more about me and 
+                    my career goals.</p>
             </div>
         </div>
     )

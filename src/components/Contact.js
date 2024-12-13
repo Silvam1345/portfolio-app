@@ -27,12 +27,34 @@ export default function Contact( {addContact} ) {
         setContactData(prevState => ({...prevState, [name]: value}))
     };
 
+    const isValidEmail = (email) => {
+        return /[@]/.test(email);
+    }
+
+    const isValidPhoneNumber = (phoneNumber) => {
+        const phoneRegex = /^(\+1[-.\s]?)?(\(?\d{3}\)?[-.\s]?)?\d{3}[-.\s]?\d{4}$/;
+
+        return phoneRegex.test(phoneNumber);
+    }
+
     const validate = () => {
         const newErrors = {};
 
-        //name field
-        if (!contactData.first_name.trim()) newErrors.first_name = "First name is required";
+        //first name field
+        if (!contactData.first_name.trim()) newErrors.first_name = "⚠️First name is required";
 
+        //name field
+        if (!contactData.last_name.trim()) newErrors.last_name = "⚠️Last name is required";
+        
+        if (!isValidEmail(contactData.email.trim())) newErrors.email = "⚠️Invalid email address. Must contain the @ symbol.";
+        
+        if (!contactData.company.trim()) newErrors.company = "⚠️Company name is required";
+        
+       //phone field
+        if (!isValidPhoneNumber(contactData.phone.trim())) newErrors.phone = "⚠️Invalid phone number. Must be US-format";
+        
+
+        
         // set errors
         setErrors(newErrors);
 
@@ -66,12 +88,17 @@ export default function Contact( {addContact} ) {
 
     return (
         <div className='contact-container'>
-            <h1>Add your Contact Info</h1>
+            <h1>Add Contact Info</h1>
+            <h3>If you would like to chat or discuss any job opportunities,
+                feel free to send your contact information!
+            </h3>
             {success ? <h2>Contact added Successfully! Redirecting...</h2> 
                 :
+                
                  <form onSubmit={handleSubmit}>
                  <div>
                      <label>First Name</label>
+                     <br />
                      <input 
                          type="text"
                          name="first_name"
@@ -82,21 +109,25 @@ export default function Contact( {addContact} ) {
                  </div>
                  <div>
                      <label>Last Name</label>
+                     <br />
                      <input
                          type="text"
                          name="last_name"
                          value={contactData.last_name}
                          onChange={handleChange}
                      />
+                     {errors.last_name && <p style={{color:'red'}}>{errors.last_name}</p>}
                  </div>
                  <div>
                      <label>Email</label>
+                     <br />
                      <input
                          type="text"
                          name="email"
                          value={contactData.email}
                          onChange={handleChange}
                      />
+                     {errors.email && <p style={{color:'red'}}>{errors.email}</p>}
                  </div>
                  <div>
                      <label>Company</label>
@@ -107,6 +138,7 @@ export default function Contact( {addContact} ) {
                          value={contactData.company}
                          onChange={handleChange}
                      />
+                     {errors.company && <p style={{color:'red'}}>{errors.company}</p>}
                  </div>
                  <div>
                      <label>Phone Number</label>
@@ -117,6 +149,7 @@ export default function Contact( {addContact} ) {
                          value={contactData.phone}
                          onChange={handleChange}
                      />
+                     {errors.phone && <p style={{color:'red'}}>{errors.phone}</p>}
                  </div>
                  <div>
                      <label>Availability</label>
@@ -139,8 +172,8 @@ export default function Contact( {addContact} ) {
                      />
                  </div>
  
-                 <button type="submit" style={{ marginTop: '10px'}}>
-                     Send Contact Info
+                 <button className="send-contact-button" type="submit">
+                     Send
                  </button>
              </form>
             }

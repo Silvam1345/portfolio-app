@@ -51,6 +51,8 @@ class App extends React.Component {
    * Checks if the contactList state has been updated, then
    * uses fetch API to get the JSON file, and posts a new version
    * of the file with the added contact info
+   * 
+   * https://blog.logrocket.com/why-react-doesnt-update-state-immediately/
    */
   postUpdatedContactList = async () => {
     if (!this.state.canPost) return;

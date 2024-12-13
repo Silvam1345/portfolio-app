@@ -2,16 +2,16 @@ import { Link } from 'react-router-dom';
 export default function Sidebar() {
     return (
         <aside className="contact-info">
-                <h3>Contact Info</h3>
+                <h3>My Contacts</h3>
                 <div className="personal-contacts">
-                    <p>Email: silvam@work.com</p>
-                    <p>Phone: 123-456-7890</p>
+                    <p>Email: silvam1345@gmail.com</p>
+                    <p>Phone: 561-843-8548</p>
                 </div>
+                <h3>My Socials</h3>
                 <div className="contact-info-links">
-                    <a href="https://example.com">Github</a>
-                    <a href="https://example.com">Linkedin</a>
-                    <a href="https://example.com">Youtube</a>
-                    <a href="https://example.com">Facebook</a>
+                    <a href="https://github.com/Silvam1345">Github</a>
+                    <a href="https://www.linkedin.com/in/mateus-silva-183a461bb/">Linkedin</a>
+                    <Link to="/contact">Contact Me!</Link>
                 </div>
         </aside>
     )
