@@ -3,6 +3,7 @@
         "first_name": "Alice",
         "last_name": "Johnson",
         "email": "alice.johnson@example.com",
+        "company": "",
         "phone": "+1234567890",
         "availability": "Monday to Friday, 9 AM - 5 PM",
         "description": "A highly motivated professional with a background in project management."
@@ -11,6 +12,7 @@
         "first_name": "Bob",
         "last_name": "Smith",
         "email": "bob.smith@example.com",
+        "company": "",
         "phone": "+1987654321",
         "availability": "Weekends, 10 AM - 6 PM",
         "description": "Experienced software developer with expertise in JavaScript and Python."
@@ -19,6 +21,7 @@
         "first_name": "Catherine",
         "last_name": "Doe",
         "email": "catherine.doe@example.com",
+        "company": "",
         "phone": "+1123456789",
         "availability": "Monday, Wednesday, Friday, 8 AM - 2 PM",
         "description": "Graphic designer specializing in branding and digital media."
@@ -27,6 +30,7 @@
         "first_name": "David",
         "last_name": "Lee",
         "email": "david.lee@example.com",
+        "company": "",
         "phone": "+1239876543",
         "availability": "Tuesday to Thursday, 1 PM - 9 PM",
         "description": "Customer service representative with over 5 years of experience."
@@ -35,6 +39,7 @@
         "first_name": "Ella",
         "last_name": "Brown",
         "email": "ella.brown@example.com",
+        "company": "",
         "phone": "+1456789123",
         "availability": "Flexible, available upon request",
         "description": "Freelance writer and content strategist passionate about storytelling."
