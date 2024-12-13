@@ -16,7 +16,8 @@ export default function About() {
                 </p>
                 <p>
                     Currently, I work in Customer Support for a Software company specializing 
-                    in IT Enterprise Architecture.
+                    in IT Enterprise Architecture. In the future, I'm planning to become a full-time front-end
+                    software/web developer. 
                 </p>
                 
             </div>
